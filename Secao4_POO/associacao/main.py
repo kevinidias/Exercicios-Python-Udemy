@@ -1,7 +1,7 @@
 from associacao import Escritor, Caneta, MaquinaDeEscrever
 from agregacao import CarrinhoDeCompras, Produto
 from composicao import Cliente, Endereco
-from heranca_simples import ClienteH, Aluno
+from heranca_simples import ClienteH, Aluno, ClienteVip
 
 #instanciando objetos
 escritor = Escritor('Kevin')
@@ -59,3 +59,9 @@ a1 = Aluno('Maria', 20)
 a1.estudar()
 a1.falar()
 print(a1.nome, a1.idade)
+
+
+#sobreposicao de membros
+
+c2 = ClienteVip('Rose', 27)
+c2.falar()
