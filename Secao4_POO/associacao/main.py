@@ -1,6 +1,7 @@
 from associacao import Escritor, Caneta, MaquinaDeEscrever
 from agregacao import CarrinhoDeCompras, Produto
 from composicao import Cliente, Endereco
+from heranca_simples import ClienteH, Aluno
 
 #instanciando objetos
 escritor = Escritor('Kevin')
@@ -45,3 +46,16 @@ cliente2 = Cliente('Maria', 66)
 cliente2.insere_endereco('Salvador', 'BA')
 cliente2.insere_endereco('Rio de Janeiro', 'RJ')
 cliente2.lista_enderecos()
+
+
+#herança simples
+
+c1 = ClienteH('Kevin', 40)
+c1.falar()
+c1.comprar()
+print(c1.nome, c1.idade)
+
+a1 = Aluno('Maria', 20)
+a1.estudar()
+a1.falar()
+print(a1.nome, a1.idade)
