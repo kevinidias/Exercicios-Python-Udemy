@@ -35,3 +35,19 @@ class ClienteVip(ClienteH):
 class Aluno(Pessoa):
     def estudar(self): #usado apenas em Aluno
         print('estudando...')
+
+
+
+#Tira dúvidas
+"""
+Herança vem de cima para baixo, classes filhos não atingem o pai.
+"""
+
+"""
+Animal -> respirar
+    Logo(Animal) -> respirar / uivar
+    Cachorro(Lobo) -> respirar / uivar / latir
+    *Somente o cachorro irá latir.
+"""
+
+
